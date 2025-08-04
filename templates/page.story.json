@@ -1,0 +1,34 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {}
+    },
+    "text_and_image_QN78kB": {
+      "type": "text-and-image",
+      "name": "t:sections.text-and-image.presets.image_with_text.name",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/UL-Building3_0.jpg",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "Skincare",
+        "title": "Clean Ingredients-Professional Results",
+        "text": "<p>Family owned since 1998, Ultraluxe is all about clean ingredients with professional results. Our line is Made in USA, Vegan and Cruelty Free. We carefully craft our products in our Los Angeles based facility with the finest ingredients like cold pressed essential oils and cutting edge ingredients like our exclusive MicroVenom technology used in our MicroVenom line. Our products are concentrated without feeling heavy on your skin and always paraben, sulfate, artificial dye and artificial fragrance free. <\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "50",
+        "layout": "right",
+        "divider": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "text_and_image_QN78kB"
+  ]
+}

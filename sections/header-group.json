@@ -8,23 +8,32 @@
         "announcement-0": {
           "type": "announcement",
           "settings": {
-            "text": "Free shipping",
-            "link_text": "On all orders over $100",
-            "link": ""
+            "text": "Free Shipping with $60+ Orders  |",
+            "link_text": "Free Samples",
+            "link": "shopify:\/\/pages\/free-samples"
           }
         },
         "announcement-1": {
           "type": "announcement",
           "settings": {
-            "text": "Hassle-free returns",
-            "link_text": "30-day postage paid returns",
+            "text": "15% Off First Order",
+            "link_text": "Use Code \"UL15\"",
             "link": ""
+          }
+        },
+        "announcement_NwCPgG": {
+          "type": "announcement",
+          "settings": {
+            "text": "Become A Pro |",
+            "link_text": "Wholesale Inquiry",
+            "link": "shopify:\/\/pages\/professional-inquiry-page"
           }
         }
       },
       "block_order": [
         "announcement-0",
-        "announcement-1"
+        "announcement-1",
+        "announcement_NwCPgG"
       ],
       "settings": {
         "announcement_compact": true
@@ -36,8 +45,9 @@
         "logo": {
           "type": "logo",
           "settings": {
-            "desktop_logo_width": 120,
-            "mobile_logo_width": 120
+            "logo": "shopify:\/\/shop_images\/843fc249-logo1-0d6a0778-9a96-42aa-9a73-a533908dd565-419x-2x_10d005k000000000000028.png",
+            "desktop_logo_width": 200,
+            "mobile_logo_width": 140
           }
         }
       },
@@ -48,14 +58,14 @@
         "main_menu_link_list": "sample-menu",
         "hover_menu": true,
         "mega_menu_images": true,
-        "main_menu_alignment": "center",
+        "main_menu_alignment": "center-split",
         "header_style": "sticky",
         "sticky_index": false,
-        "sticky_collection": true,
-        "toolbar_menu": "",
+        "sticky_collection": false,
+        "toolbar_menu": "sample-menu",
         "toolbar_social": true,
-        "show_locale_selector": true,
-        "show_currency_selector": true,
+        "show_locale_selector": false,
+        "show_currency_selector": false,
         "show_currency_flags": false
       }
     }

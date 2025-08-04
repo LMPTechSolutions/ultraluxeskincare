@@ -1,0 +1,54 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "text_columns_dEpqmz": {
+      "type": "text-columns",
+      "blocks": {
+        "text_block_tWGWtx": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Dairedsfacility-2018-2-300x231.png",
+            "image_mask": "none",
+            "image_width": 280,
+            "title": "DAIREDS",
+            "text": "<p>Housed together in a dramatic 18,000 square-foot facility, Daireds offers services and treatments typically found in destination spas, packaged in a convenient urban setting providing guests with everything but an overnight stay. The concept blends the high energy of a hair salon, the calmness of a spa, and the convenience of a cafe, along with a conference center to accommodate corporate or private events. Additional pleasures to explore include a beauty, gift and fashion boutique and a gorgeous sprawling garden with a Koi pond.<\/p><p>Combining ancient disciplines, time-honored methodologies and cutting-edge technology, Spa Pangéa offers the finest quality facials, nail services, massage therapies, luxurious wraps and hydrotherapy treatments available to replenish, cleanse, and soothe. Spa Pangéa’s skin care specialties include resurfacing, glycolic and phyto-peel treatment.<\/p><p>Daireds team of licensed medical professionals offer laser skin rejuvenation, laser hair reduction and cosmetic treatments.<\/p><p>You can visit them at:<br\/>2400 W I-20<br\/>Arlington, TX 76017<\/p><p><a href=\"tel:+817-465-9797\">Phone: 817-465-9797<\/a><\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_a8rQVe": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/download-570x346.jpg",
+            "image_mask": "none",
+            "image_width": 360,
+            "title": "Spa at the Del Monte",
+            "text": "<p>From signature facials to sophisticated body treatments, the Spa at the Del Monte offers a full range of spa treatments designed to soothe the mind, body and soul.<\/p><p>They offer 10 luxurious treatment rooms as well as separate men’s and women’s sanctuaries including dry saunas, rejuvenating showers, locker accommodations, indulgent robes and luxurious relaxation lounges.<\/p><p>Experience the gold standard in skin care with customized treatments using our UltraLuxe Products that deliver immediate clarity and smoothness. Their UltraLuxe Age Control and UltraLuxe Custom Facials, based on the needs and concerns of your specific skin type. will help you increase circulation, nourish, plump and improve the overall tone and texture of the skin. Leaving you with youthful, firm, and luxuriously glowing skin.<\/p><p>You can visit them at:<\/p><p>43 North Main St. Pittsford, NY 14534<\/p><p><a href=\"tel:+585.419.3000\">Phone: 585.419.3000<\/a><\/p><p><a href=\"mailto:delmontespa@ejdcorp.com\">Email: delmontespa@ejdcorp.com<\/a><\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_tWGWtx",
+        "text_block_a8rQVe"
+      ],
+      "name": "t:sections.text-columns.presets.text_columns_with_images.name",
+      "settings": {
+        "title": "SPA Spotlight",
+        "align_text": "left",
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "text_columns_dEpqmz"
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "advanced_content_6KCN8d": {
+      "type": "advanced-content",
+      "blocks": {
+        "liquid_HMK9TY": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h1 class=\"text-center\">One-minute Skin Consultation and Skin Advice<\/h1>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        },
+        "image_eKT8QP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/facials-LG-2.jpg",
+            "link": "",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_HMK9TY",
+        "image_eKT8QP"
+      ],
+      "name": "t:sections.advanced-content.presets.custom_content.name",
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "lazyload_images": true
+      }
+    },
+    "rich_text_4rQQda": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_B4pdcD": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Rich text"
+          }
+        },
+        "text_CxDbrr": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p><strong>All products are Made in USA, Vegan, Paraben and Sulfate Free, Contain No Artificial Colors or Fragrances, No Animal Cruelty or By-Products<\/strong><\/p><p>Complete our one-minute skin consultation form and let our friendly and professional Skin Specialists create the perfect skincare solution so you can achieve a fresh, radiant and glowing complexion. You receive Free Samples with every order and 15% off your first order. You may also call us at <a href=\"tel:18553668097\" title=\"tel:18553668097\">1-855-366-8097<\/a><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_B4pdcD",
+        "text_CxDbrr"
+      ],
+      "name": "t:sections.rich-text.presets.rich_text.name",
+      "settings": {
+        "align_text": "left",
+        "narrow_column": true,
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "advanced_content_6KCN8d",
+    "rich_text_4rQQda"
+  ]
+}

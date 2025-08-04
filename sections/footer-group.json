@@ -2,35 +2,53 @@
   "type": "footer",
   "name": "t:sections.footer-group.name",
   "sections": {
+    "scrolling_text_4d9gQT": {
+      "type": "scrolling-text",
+      "disabled": true,
+      "name": "t:sections.marquee.presets.scrolling_text.name",
+      "settings": {
+        "text": "Worldwide Shipping - Live Friendly Customer Support - 30 Day Easy Returns",
+        "link": "",
+        "text_size": 20,
+        "text_spacing": true,
+        "direction": "left",
+        "speed": 200
+      }
+    },
     "footer-promotions": {
       "type": "footer-promotions",
       "blocks": {
         "promotion-1": {
           "type": "promotion",
           "settings": {
+            "enable_image": false,
             "image_mask": "landscape",
-            "title": "Summer 2022 release",
-            "text": "<p>Our latest breezy looks just in time for summer. Just in time for more fun in the sun.<\/p>",
-            "button_label": "Shop now"
+            "title": "",
+            "text": "<p>Worldwide Shipping<\/p>",
+            "button_label": "",
+            "button_link": ""
           }
         },
         "promotion-2": {
           "type": "promotion",
           "settings": {
+            "enable_image": false,
             "image_mask": "landscape",
-            "title": "New Encinitas store",
-            "text": "<p>Try out all your favourite looks at our new flagship store in Encinitas, California.<\/p>",
-            "button_label": "View map",
+            "title": "",
+            "text": "<p>Live Friendly Customer Support<\/p>",
+            "button_label": "",
             "button_link": "https:\/\/maps.google.com\/?daddr=Encinitas,%20California"
           }
         },
         "promotion-3": {
           "type": "promotion",
           "settings": {
+            "enable_image": false,
             "image_mask": "landscape",
-            "title": "Save 10% on dresses",
-            "text": "<p>Sun protection doesn't have to be a hassle — add a whole new layer to your style. <\/p>",
-            "button_label": "Shop dresses"
+            "title": "",
+            "text": "<p>30 Day Easy Returns<\/p>",
+            "button_label": "",
+            "button_link": ""
           }
         }
       },
@@ -40,7 +58,7 @@
         "promotion-3"
       ],
       "settings": {
-        "hide_homepage": true
+        "hide_homepage": false
       }
     },
     "footer": {
@@ -74,6 +92,7 @@
           "type": "newsletter",
           "settings": {
             "show_footer_title": false,
+            "title": "Sign up and save",
             "text": "<p>Be the first to know about our biggest and best sales. We'll never send more than one email a month.<\/p>",
             "container_width": 33
           }
@@ -86,13 +105,17 @@
         "newsletter"
       ],
       "settings": {
-        "show_payment_icons": true,
+        "show_locale_selector": false,
+        "show_currency_selector": false,
+        "show_currency_flags": false,
+        "show_payment_icons": false,
         "show_copyright": false,
         "copyright_text": ""
       }
     }
   },
   "order": [
+    "scrolling_text_4d9gQT",
     "footer-promotions",
     "footer"
   ]

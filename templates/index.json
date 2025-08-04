@@ -3,293 +3,296 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
-        "image-1": {
+        "image_37QQFK": {
           "type": "image",
           "settings": {
             "top_subheading": "",
-            "title": "Fall\nessentials",
-            "title_size": 64,
-            "subheading": "Celebrate joyful moments with the House's emblematic pieces.",
-            "link_text": "Shop all",
-            "color_accent": "#321004"
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "shopify:\/\/collections\/new-products",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/new_product_website_banner-01.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/mobile_size_banner-02.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
           }
         },
-        "image-2": {
+        "image_d9WTKA": {
           "type": "image",
           "settings": {
             "top_subheading": "",
-            "title": "Inspired\nby Nature",
-            "title_size": 69,
+            "title": "",
+            "title_size": 80,
             "subheading": "",
-            "link_text": "Shop Now",
-            "color_accent": "#6b3f21"
+            "link": "shopify:\/\/collections\/regimen-kits-1",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/00_all-kits_desktop_homebanner_a7efd880-3ffb-4ad4-be4d-2a68650c4e13.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/00_all-kits_mobile_newsletter_3dc8bd87-08f0-4bbf-bb19-a5d421aed412.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
           }
         },
         "image-3": {
           "type": "image",
           "settings": {
             "top_subheading": "",
-            "title": "Luxette's STYLE",
+            "title": "",
             "title_size": 63,
-            "subheading": "Fresh looks for sunny days.",
+            "subheading": "",
+            "link": "https:\/\/ultraluxeskincare.com\/collections\/cellular-patch-cream-promotion-1",
+            "link_text": "",
+            "link_2": "",
             "link_text_2": "Shop all",
-            "color_accent": "#8b4e40"
+            "color_accent": "#8b4e40",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Homepage-banner_July14-20_1.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/MOBILE-banner_JULY14-20_2.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        },
+        "image-1": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 64,
+            "subheading": "",
+            "link": "shopify:\/\/collections\/rx-scalp",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#321004",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Hair-Homepage-bannerN.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/aaam.png",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        },
+        "image-2": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 69,
+            "subheading": "",
+            "link": "shopify:\/\/collections\/ul-suncare-collection-promotion",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#6b3f21",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Homepage-banner_may-5-111.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
           }
         }
       },
       "block_order": [
+        "image_37QQFK",
+        "image_d9WTKA",
+        "image-3",
         "image-1",
-        "image-2",
-        "image-3"
+        "image-2"
       ],
       "settings": {
-        "section_height": "100vh",
+        "section_height": "natural",
         "mobile_height": "100vh",
-        "autoplay_speed": 5
+        "parallax": false,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "lazyload_images": true
       }
     },
     "featured-collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Popular picks",
-        "home_featured_products": "spring",
-        "per_row": 5,
-        "rows": 2
+        "title": "Featured \/ Best Sellers",
+        "home_featured_products": "featured-collection",
+        "per_row": 3,
+        "rows": 4,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
       }
     },
-    "countdown": {
-      "type": "countdown",
+    "testimonials_AiwyPk": {
+      "type": "testimonials",
       "blocks": {
-        "content": {
-          "type": "content",
+        "testimonial_bpMX9x": {
+          "type": "testimonial",
           "settings": {
-            "heading": "BLACK FRIDAY",
-            "heading_size": "h1",
-            "text": "<p>get 20% off if you spend 120$ or more!<\/p>",
-            "content_alignment": "center"
+            "icon": "5-stars",
+            "testimonial": "<p>I no longer need to wear makeup when I leave my house. I haven’t felt this good about myself in years!<\/p>",
+            "author": "ALLISON",
+            "author_info": ""
           }
         },
-        "timer": {
-          "type": "timer",
+        "testimonial_AAUQa4": {
+          "type": "testimonial",
           "settings": {
-            "year": "2023",
-            "month": "04",
-            "text": ""
+            "icon": "5-stars",
+            "testimonial": "<p>My skin is tighter, firmer and more hydrated. My skin looks more even and dark spots are going away!<\/p>",
+            "author": "Kim Hopkins",
+            "author_info": ""
+          }
+        },
+        "testimonial_UpT9UJ": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>For me, it’s nothing short of a miracle. People comment on my skin all the time. I don’t wear foundation anymore, and I’m told I’ve never looked better, despite constant travel, stress and age!<\/p>",
+            "author": "KITA",
+            "author_info": ""
+          }
+        },
+        "testimonial_X49Xpe": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>UltraLuxe completely changed the quality of my skin. I can feel the products working every time I use it. My skin has never been happier and it’s all because of UltraLuxe.<\/p>",
+            "author": "LAURA",
+            "author_info": ""
+          }
+        },
+        "testimonial_rqwt9z": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Since starting to use UltraLuxe products, I have less irritation, my skin feels so much better, and I think it looks a lot better. I love that it’s effective and all-natural, and smells and feels good when applied.<\/p>",
+            "author": "BRANDON",
+            "author_info": ""
+          }
+        },
+        "testimonial_9bNteh": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>UltraLuxe products are great! I love that they’re not greasy and absorb completely into the skin! I’m able to easily put my makeup on once it dries and I don’t look greasy.<\/p>",
+            "author": "KIM RIFE",
+            "author_info": ""
           }
         }
       },
       "block_order": [
-        "content",
-        "timer"
+        "testimonial_bpMX9x",
+        "testimonial_AAUQa4",
+        "testimonial_UpT9UJ",
+        "testimonial_X49Xpe",
+        "testimonial_rqwt9z",
+        "testimonial_9bNteh"
       ],
+      "name": "t:sections.testimonials.presets.testimonials.name",
       "settings": {
-        "layout": "hero",
-        "text_color": "#ffffff",
-        "background_color": "#512c13",
-        "overlay_color": "#1c1d1d",
-        "overlay_opacity": 30
+        "title": "Testimonials",
+        "align_text": "center",
+        "round_images": true,
+        "color_background": "#f5ebe0",
+        "color_text": "#1c1d1d"
       }
     },
-    "promo-grid-1": {
-      "type": "promo-grid",
+    "background_image_text_q8LeKm": {
+      "type": "background-image-text",
+      "name": "t:sections.background-image-text.presets.large_image_with_text_box.name",
+      "settings": {
+        "subtitle": "Ultraluxe Skincare",
+        "title": "WHY CHOOSE US?",
+        "text": "<p>Family-owned since 1998, Ultraluxe is all about clean ingredients with professional results. Our line is Made in USA, Vegan and Cruelty-Free. We carefully craft each product in our Los Angeles-based facility with the finest ingredients like cold-pressed essential oils and cutting-edge ingredients like our exclusive MicroVenom technology. Our products are concentrated without feeling heavy on your skin and are always paraben, sulfate, artificial dye and artificial fragrance-free.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "image": "shopify:\/\/shop_images\/facials-LG-2.jpg",
+        "layout": "right",
+        "height": 650,
+        "framed": true,
+        "parallax": false,
+        "parallax_direction": "top",
+        "lazyload_images": true
+      }
+    },
+    "1753997361242a65f9": {
+      "type": "apps",
       "blocks": {
-        "advanced-1": {
-          "type": "advanced",
+        "okendo_reviews_carousel_YF7gLD": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-carousel\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
           "settings": {
-            "subheading": "New arrival",
-            "heading": "Denim",
-            "textarea": "",
-            "cta_text1": "Explore collection",
-            "cta_text2": "",
-            "width": "50",
-            "height": 700,
-            "text_size": 140,
-            "color_accent": "#424d4e"
-          }
-        },
-        "advanced-2": {
-          "type": "advanced",
-          "settings": {
-            "subheading": "",
-            "heading": "Gift cards",
-            "textarea": "Help support local business by buying a gift card. \nLocal pickup available!",
-            "cta_text1": "Shop gift cards",
-            "cta_text2": "",
-            "width": "50",
-            "height": 600,
-            "text_size": 95,
-            "color_accent": "#ffffff"
+            "show_heading": false,
+            "heading": "Customers Feedback",
+            "badge_link": "",
+            "product": ""
           }
         }
       },
       "block_order": [
-        "advanced-1",
-        "advanced-2"
+        "okendo_reviews_carousel_YF7gLD"
       ],
       "settings": {
-        "full_width": true,
-        "space_above": false,
-        "space_below": false
+        "full_width": false,
+        "space_around": true
       }
     },
-    "rich-text": {
-      "type": "rich-text",
+    "logo_list_VJ9eUy": {
+      "type": "logo-list",
       "blocks": {
-        "heading": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {}
-        },
-        "text": {
-          "type": "text",
+        "logo_image_CJDFkN": {
+          "type": "logo_image",
           "settings": {
-            "text": "<p>Fashion inspired by where we're from — the sunny shores of California.<br\/>Products provided by <a href=\"https:\/\/www.piko.com\/\" title=\"https:\/\/www.piko.com\/\">PIKO<\/a><\/p>"
+            "image": "shopify:\/\/shop_images\/image_1.jpg",
+            "link": "https:\/\/www.tiktok.com\/@ultraluxeskincare"
+          }
+        },
+        "logo_image_HW9x6W": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_2.png",
+            "link": "https:\/\/www.tiktok.com\/@ultraluxeskincare"
+          }
+        },
+        "logo_image_JxKC6H": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_3.png",
+            "link": "https:\/\/www.tiktok.com\/@ultraluxeskincare"
+          }
+        },
+        "logo_image_UDzgWn": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_4.png",
+            "link": "https:\/\/www.tiktok.com\/@ultraluxeskincare"
           }
         }
       },
       "block_order": [
-        "heading",
-        "text"
+        "logo_image_CJDFkN",
+        "logo_image_HW9x6W",
+        "logo_image_JxKC6H",
+        "logo_image_UDzgWn"
       ],
-      "settings": {}
-    },
-    "promo-grid-2": {
-      "type": "promo-grid",
-      "blocks": {
-        "advanced": {
-          "type": "advanced",
-          "settings": {
-            "subheading": "essentials",
-            "heading": "b&w Capsule",
-            "textarea": "Get the perfect look for your fall classic wardrobe.",
-            "cta_text1": "",
-            "height": 660,
-            "text_size": 90,
-            "color_accent": "#333541"
-          }
-        },
-        "sale_collection-1": {
-          "type": "sale_collection",
-          "settings": {
-            "sale_collection": "dresses-maxi-dresses",
-            "width": "50",
-            "color_tint": "#ffffff",
-            "color_tint_opacity": 10,
-            "boxed": true
-          }
-        },
-        "sale_collection-2": {
-          "type": "sale_collection",
-          "settings": {
-            "sale_collection": "tops",
-            "middle_text": "25% off",
-            "bottom_text": "summer tops",
-            "width": "50",
-            "color_tint": "#ffffff",
-            "color_tint_opacity": 6,
-            "boxed": true
-          }
-        }
-      },
-      "block_order": [
-        "advanced",
-        "sale_collection-1",
-        "sale_collection-2"
-      ],
+      "name": "t:sections.logo-list.presets.logo_list.name",
       "settings": {
-        "gutter_size": 15,
-        "space_above": false,
-        "space_below": false
-      }
-    },
-    "hotspots": {
-      "type": "hotspots",
-      "blocks": {
-        "product": {
-          "type": "product",
-          "settings": {
-            "featured_product": "rosewood-dlmn-knotted-high-low-top",
-            "vertical": 25,
-            "horizontal": 25
-          }
-        }
-      },
-      "block_order": [
-        "product"
-      ],
-      "settings": {
-        "hotspot_style": "tag",
-        "hotspot_color": "#321004"
-      }
-    },
-    "map": {
-      "type": "map",
-      "settings": {
-        "map_title": "Local pickup available",
-        "address": "<p>301 Front St W<br\/>Toronto, Canada<\/p><p>Mon - Fri, 8:30am - 10:30pm<br\/>Saturday, 8:30am - 10:30pm<br\/>Sunday, 8:30am - 10:30pm<\/p>",
-        "api_key": ""
-      }
-    },
-    "featured-collections": {
-      "type": "featured-collections",
-      "blocks": {
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "title": ""
-          }
-        },
-        "collection-2": {
-          "type": "collection",
-          "settings": {
-            "title": ""
-          }
-        },
-        "collection-3": {
-          "type": "collection",
-          "settings": {
-            "title": ""
-          }
-        },
-        "collection-4": {
-          "type": "collection",
-          "settings": {
-            "title": ""
-          }
-        }
-      },
-      "block_order": [
-        "collection-1",
-        "collection-2",
-        "collection-3",
-        "collection-4"
-      ],
-      "settings": {
-        "title": "Shop by category"
-      }
-    },
-    "blog-posts": {
-      "type": "blog-posts",
-      "settings": {
-        "title": "From the journal",
-        "blog": "news",
-        "blog_show_tags": false,
-        "blog_show_comments": false,
-        "blog_show_author": false,
-        "blog_image_size": "landscape"
+        "title": "Follow Us @ultraluxeskincare",
+        "logo_opacity": 76,
+        "divider": false
       }
     }
   },
   "order": [
     "slideshow",
     "featured-collection",
-    "countdown",
-    "promo-grid-1",
-    "rich-text",
-    "promo-grid-2",
-    "hotspots",
-    "map",
-    "featured-collections",
-    "blog-posts"
+    "testimonials_AiwyPk",
+    "background_image_text_q8LeKm",
+    "1753997361242a65f9",
+    "logo_list_VJ9eUy"
   ]
 }

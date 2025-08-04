@@ -104,7 +104,21 @@
         {%- endif -%}
       </p>
     {%- endif -%}
-    <p class="footer__small-text">{{ powered_by_link }}</p>
+    {% comment %} <p class="footer__small-text">{{ powered_by_link }}</p> {% endcomment %}
+    {%- if linklists[section.settings.bottom_menu].links.size > 0 -%}
+
+      <div class="footer__small-text">
+        <div class="collapsible-content__inner">
+          <div class="footer__collapsible{% unless block.settings.show_footer_title %} footer_collapsible--disabled{% endunless %}">
+            <ul class="no-bullets site-footer__linklist">
+              {%- for link in linklists[section.settings.bottom_menu].links -%}
+                <li class="site-nav__item"><a class="footer__small-text" href="{{ link.url }}">{{ link.title }}</a></li>
+              {%- endfor -%}
+            </ul>
+          </div>
+        </div>
+      </div>
+    {%- endif -%}
 
   </div>
 </footer>
@@ -161,6 +175,12 @@
       "type": "text",
       "id": "copyright_text",
       "label": "t:sections.footer.settings.copyright_text.label"
+    },
+    {
+      "type": "link_list",
+      "id": "bottom_menu",
+      "label": "Bottom Menu",
+      "default": "footer"
     }
   ],
   "blocks": [

@@ -2,37 +2,51 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "disabled": true,
       "settings": {}
     },
-    "rich-text": {
+    "rich_text_CzTYPd": {
       "type": "rich-text",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "text_qBPBHx": {
+          "type": "text",
+          "disabled": true,
           "settings": {
-            "title": "Get in touch"
+            "enlarge_text": false,
+            "text": "<p><strong>Consumer Customer Service and Orders: <\/strong><a href=\"mailto:frontdesk@UltraLuxeSkincare.com\">frontdesk@UltraLuxeSkincare.com<\/a> 1-855-366-8102<\/p><p><strong>Wholesale Customer Service and Orders: <\/strong><a href=\"mailto:frontdesk@UltraLuxeSkincare.com\">frontdesk@UltraLuxeSkincare.com<\/a> 1-818-960-4011 X.221<\/p><p><strong>Customer Service: <\/strong><a href=\"mailto:frontdesk@UltraLuxeSkincare.com\">frontdesk@UltraLuxeSkincare.com<\/a><\/p><p><strong>Marketing & Publicity: <\/strong><a href=\"mailto:spaultraluxe@ultraluxeskincare.com\">spaultraluxe@UltraLuxeSkinca<\/a><a href=\"mailto:spaultraluxe@ultraluxeskincare.com\" title=\"spaultraluxe@ultraluxeskincare.com\">re.com<\/a><\/p>"
           }
         },
-        "text": {
-          "type": "text",
-          "settings": {}
+        "heading_BP3myh": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Rich text"
+          }
         }
       },
       "block_order": [
-        "heading",
-        "text"
+        "text_qBPBHx",
+        "heading_BP3myh"
       ],
-      "settings": {}
+      "name": "t:sections.rich-text.presets.rich_text.name",
+      "settings": {
+        "align_text": "left",
+        "narrow_column": true,
+        "divider": false
+      }
     },
     "form": {
       "type": "contact-form",
-      "settings": {}
+      "settings": {
+        "title": "",
+        "text": "",
+        "show_phone": false,
+        "narrow_column": true
+      }
     }
   },
   "order": [
     "main",
-    "rich-text",
+    "rich_text_CzTYPd",
     "form"
   ]
 }
