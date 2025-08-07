@@ -16,7 +16,7 @@
           {{ block.settings.text }}
         {%- endif -%}
 
-        {%- form 'customer', id: 'newsletter-footer' -%}
+        {% comment %} {%- form 'customer', id: 'newsletter-footer' -%}
           {%- if form.posted_successfully? -%}
             <div class="note note--success">{{ 'general.newsletter_form.newsletter_confirmation' | t }}</div>
           {%- endif -%}
@@ -39,8 +39,8 @@
               </span>
             </button>
           </div>
-        {%- endform -%}
-
+        {%- endform -%} {% endcomment %}
+        <div class="klaviyo-form-RwYYaA"></div>
         {% render 'social-icons', additional_classes: 'footer__social' %}
 
       </div>
