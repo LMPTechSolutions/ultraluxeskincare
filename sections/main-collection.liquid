@@ -34,7 +34,7 @@
             endfor
           -%}
           {%- paginate collection.products by paginate_by -%}
-          {%- for block in section.blocks -%}
+          {%- for block in section.blocks -%}{% comment %}EasylockdownFilterBegin{% endcomment %}{% capture easylockdownFilter %}{% render 'easylockdown_filter_collection' with block, easylockdownRender: true, easylockdownItemSelectorOff: easylockdownItemSelectorOff %}{% endcapture %}{% assign easylockdownFilter = easylockdownFilter | strip %}{% if easylockdownFilter == 'continue' %}{% continue %}{% else %}{{ easylockdownFilter }}{% endif %}{% comment %}EasylockdownFilterEnd{% endcomment %}
             <div {{ block.shopify_attributes }} {%- if block.type == 'product-grid' -%}data-scroll-to{%- endif -%}>
               {%- case block.type -%}
               {%- when 'collection_description' -%}

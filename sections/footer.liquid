@@ -23,105 +23,108 @@
     }
   {%- endstyle -%}
 {%- endif -%}
+ {% if customer and customer.tags contains "WHOLESALEDRAFTORDER" %}
+  
+{% else %}
+  <footer class="site-footer" data-section-id="{{ section.id }}" data-section-type="footer-section">
+    <div class="page-width">
 
-<footer class="site-footer" data-section-id="{{ section.id }}" data-section-type="footer-section">
-  <div class="page-width">
+      <div class="grid">
+        {%- assign row_width = 0 -%}
+        {%- for block in section.blocks -%}
+          {%- assign row_width = row_width | plus: block.settings.container_width -%}
+          {%- if row_width > 100 -%}
+            <div class="footer__clear small--hide"></div>
+            {%- assign row_width = row_width | minus: 100 -%}
+          {%- endif -%}
 
-    <div class="grid">
-      {%- assign row_width = 0 -%}
-      {%- for block in section.blocks -%}
-        {%- assign row_width = row_width | plus: block.settings.container_width -%}
-        {%- if row_width > 100 -%}
-          <div class="footer__clear small--hide"></div>
-          {%- assign row_width = row_width | minus: 100 -%}
-        {%- endif -%}
-
-        <div {{ block.shopify_attributes }} class="grid__item footer__item--{{ block.id }}" data-type="{{ block.type }}">
-          {%- style -%}
-            @media only screen and (min-width: 769px) and (max-width: 959px) {
-              .footer__item--{{ block.id }} {
-                width: 50%;
-                padding-top: 40px;
+          <div {{ block.shopify_attributes }} class="grid__item footer__item--{{ block.id }}" data-type="{{ block.type }}">
+            {%- style -%}
+              @media only screen and (min-width: 769px) and (max-width: 959px) {
+                .footer__item--{{ block.id }} {
+                  width: 50%;
+                  padding-top: 40px;
+                }
+                .footer__item--{{ block.id }}:nth-child(2n + 1) {
+                  clear: left;
+                }
               }
-              .footer__item--{{ block.id }}:nth-child(2n + 1) {
-                clear: left;
-              }
-            }
-            @media only screen and (min-width: 960px) {
-              .footer__item--{{ block.id }} {
-                width: {{ block.settings.container_width }}%;
-              }
+              @media only screen and (min-width: 960px) {
+                .footer__item--{{ block.id }} {
+                  width: {{ block.settings.container_width }}%;
+                }
 
-            }
-          {%- endstyle -%}
+              }
+            {%- endstyle -%}
 
-          {%- liquid
-            case block.type
-              when 'logo_social'
-                render 'footer-logo', block: block
-              when 'custom'
-                render 'footer-custom-text', block: block, container_width: block.settings.container_width
-              when 'newsletter'
-                render 'footer-newsletter', block: block
-              when 'menu'
-                render 'footer-menu', block: block
-              when 'follow_shop_cta'
-                render 'follow-shop-cta', block: block
-            endcase
+            {%- liquid
+              case block.type
+                when 'logo_social'
+                  render 'footer-logo', block: block
+                when 'custom'
+                  render 'footer-custom-text', block: block, container_width: block.settings.container_width
+                when 'newsletter'
+                  render 'footer-newsletter', block: block
+                when 'menu'
+                  render 'footer-menu', block: block
+                when 'follow_shop_cta'
+                  render 'follow-shop-cta', block: block
+              endcase
+            -%}
+          </div>
+        {%- endfor -%}
+      </div>
+
+      {%- if show_selectors -%}
+        <div class="footer__section">
+          {%- render 'multi-selectors',
+            locale_selector: locale_selector,
+            currency_selector: currency_selector,
+            show_currency_flags: section.settings.show_currency_flags
+            location: 'footer'
           -%}
         </div>
-      {%- endfor -%}
-    </div>
+      {%- endif -%}
 
-    {%- if show_selectors -%}
-      <div class="footer__section">
-        {%- render 'multi-selectors',
-          locale_selector: locale_selector,
-          currency_selector: currency_selector,
-          show_currency_flags: section.settings.show_currency_flags
-          location: 'footer'
-        -%}
-      </div>
-    {%- endif -%}
+      {%- if section.settings.show_payment_icons -%}
+        {%- unless shop.enabled_payment_types == empty -%}
+          <ul class="inline-list payment-icons footer__section">
+            {%- for type in shop.enabled_payment_types -%}
+              <li class="icon--payment">
+                {{ type | payment_type_svg_tag }}
+              </li>
+            {%- endfor -%}
+          </ul>
+        {%- endunless -%}
+      {%- endif -%}
 
-    {%- if section.settings.show_payment_icons -%}
-      {%- unless shop.enabled_payment_types == empty -%}
-        <ul class="inline-list payment-icons footer__section">
-          {%- for type in shop.enabled_payment_types -%}
-            <li class="icon--payment">
-              {{ type | payment_type_svg_tag }}
-            </li>
-          {%- endfor -%}
-        </ul>
-      {%- endunless -%}
-    {%- endif -%}
+      {%- if section.settings.show_copyright -%}
+        <p class="footer__small-text">
+          &copy; {{ 'now' | date: '%Y' }} {{ shop.name }}
+          {%- if section.settings.copyright_text != blank -%}
+            {{ section.settings.copyright_text }}
+          {%- endif -%}
+        </p>
+      {%- endif -%}
+      {% comment %} <p class="footer__small-text">{{ powered_by_link }}</p> {% endcomment %}
+      {%- if linklists[section.settings.bottom_menu].links.size > 0 -%}
 
-    {%- if section.settings.show_copyright -%}
-      <p class="footer__small-text">
-        &copy; {{ 'now' | date: '%Y' }} {{ shop.name }}
-        {%- if section.settings.copyright_text != blank -%}
-          {{ section.settings.copyright_text }}
-        {%- endif -%}
-      </p>
-    {%- endif -%}
-    {% comment %} <p class="footer__small-text">{{ powered_by_link }}</p> {% endcomment %}
-    {%- if linklists[section.settings.bottom_menu].links.size > 0 -%}
-
-      <div class="footer__small-text">
-        <div class="collapsible-content__inner">
-          <div class="footer__collapsible{% unless block.settings.show_footer_title %} footer_collapsible--disabled{% endunless %}">
-            <ul class="no-bullets site-footer__linklist">
-              {%- for link in linklists[section.settings.bottom_menu].links -%}
-                <li class="site-nav__item"><a class="footer__small-text" href="{{ link.url }}">{{ link.title }}</a></li>
-              {%- endfor -%}
-            </ul>
+        <div class="footer__small-text">
+          <div class="collapsible-content__inner">
+            <div class="footer__collapsible{% unless block.settings.show_footer_title %} footer_collapsible--disabled{% endunless %}">
+              <ul class="no-bullets site-footer__linklist">
+                {%- for link in linklists[section.settings.bottom_menu].links -%}
+                  <li class="site-nav__item"><a class="footer__small-text" href="{{ link.url }}">{{ link.title }}</a></li>
+                {%- endfor -%}
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    {%- endif -%}
+      {%- endif -%}
 
-  </div>
-</footer>
+    </div>
+  </footer>
+{% endif %}
 
 {% schema %}
 {

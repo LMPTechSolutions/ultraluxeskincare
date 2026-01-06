@@ -19,7 +19,7 @@
         <span class="icon__fallback-text">{{ 'general.search.title' | t }}</span>
       </a>
     {%- endif -%}
-
+     <a href="#" role="button" class="snize-sticky-searchbox snize-custom-widget-opener top-left  site-nav__link site-nav__link--icon js-search-header" data-no-instant="true" aria-label="Open sticky searchbox"><div class="snize-search-close"></div><div class="snize-search-magnifier"></div></a>
     {%- if section.settings.main_menu_alignment == 'left' or section.settings.main_menu_alignment == 'left-center' or section.settings.main_menu_alignment == 'left-drawer' -%}
       <button
         type="button"

@@ -48,24 +48,27 @@
         <div class="product-single__related grid grid--uniform" data-aos="overflow__animation" {% if type == 'block' %}data-slideshow data-controls="{{ block.settings.control_type }}" data-per-slide="{{ block.settings.per_slide }}" data-count="{{ number_of_products}}"{% endif %}>
           {% assign currentStep = 1 %}
           {%- for product in related_collection.products limit: number_of_products -%}
-            {% if currentStep == 1 %}
-              <div class="product-recommendations__slide">
-            {% endif %}
+              {% unless product.tags contains "Sample Products" or product.tags contains "pro-size"  or product.title contains "Facial Kit Samples"  %}
 
-            {%- render 'product-grid-item',
-              image_style: image_style,
-              product: product,
-              per_row: 1,
-              type: 'horizontal',
-              sizes: '112px',
-            -%}
+                {% if currentStep == 1 %}
+                  <div class="product-recommendations__slide">
+                {% endif %}
 
-            {% if currentStep == block.settings.per_slide or forloop.last %}
-              </div>
-              {% assign currentStep = 0 %}
-            {% endif %}
+                {%- render 'product-grid-item',
+                  image_style: image_style,
+                  product: product,
+                  per_row: 1,
+                  type: 'horizontal',
+                  sizes: '112px',
+                -%}
 
-            {% assign currentStep = currentStep | plus: 1 %}
+                {% if currentStep == block.settings.per_slide or forloop.last %}
+                  </div>
+                  {% assign currentStep = 0 %}
+                {% endif %}
+
+                {% assign currentStep = currentStep | plus: 1 %}
+              {% endunless %}
           {%- endfor -%}
         </div>
       </div>

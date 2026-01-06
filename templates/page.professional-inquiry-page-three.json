@@ -23,10 +23,9 @@
         },
         "button_kyE6mN": {
           "type": "button",
-          "disabled": true,
           "settings": {
             "link": "",
-            "link_text": "start now"
+            "link_text": "click to start now"
           }
         }
       },
@@ -42,44 +41,18 @@
         "divider": false
       }
     },
-    "popup_button_4RUWnA": {
-      "type": "popup-button",
+    "advanced_content_BERECY": {
+      "type": "advanced-content",
       "blocks": {
-        "button_UiVqgm": {
-          "type": "button",
+        "liquid_9JCVNJ": {
+          "type": "liquid",
           "settings": {
-            "link": "",
-            "link_text": "Start now"
-          }
-        }
-      },
-      "block_order": [
-        "button_UiVqgm"
-      ],
-      "name": "Popup Button",
-      "settings": {
-        "align_text": "center",
-        "narrow_column": true,
-        "divider": false
-      }
-    },
-    "popup_button_fNWrth": {
-      "type": "popup-button",
-      "blocks": {
-        "heading_dWhmxe": {
-          "type": "heading",
-          "settings": {
-            "title": "Ultraluxe Transformations"
+            "code": "<h2>Ultraluxe Transformations\n<\/h2><p>Before and After - 3 Weeks Results,<\/p>",
+            "width": "100%",
+            "alignment": "center"
           }
         },
-        "text_Q7wCG8": {
-          "type": "text",
-          "settings": {
-            "enlarge_text": true,
-            "text": "<p>Before and After - 3 Weeks Results<\/p>"
-          }
-        },
-        "image_EWYQ94": {
+        "image_DbmrPj": {
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/24_1.png",
@@ -88,25 +61,25 @@
             "alignment": "center"
           }
         },
-        "button_h7YMRP": {
-          "type": "button",
+        "liquid_mdamjY": {
+          "type": "liquid",
           "settings": {
-            "link": "",
-            "link_text": "Start Now"
+            "code": "<a href=\"\" class=\"btn\">\n    click to start now\n<\/a>",
+            "width": "100%",
+            "alignment": "center"
           }
         }
       },
       "block_order": [
-        "heading_dWhmxe",
-        "text_Q7wCG8",
-        "image_EWYQ94",
-        "button_h7YMRP"
+        "liquid_9JCVNJ",
+        "image_DbmrPj",
+        "liquid_mdamjY"
       ],
-      "name": "Popup Button",
+      "name": "t:sections.advanced-content.presets.custom_content.name",
       "settings": {
-        "align_text": "center",
-        "narrow_column": true,
-        "divider": false
+        "full_width": false,
+        "space_around": true,
+        "lazyload_images": true
       }
     },
     "logo_list_Neq3Kq": {
@@ -166,15 +139,14 @@
       "type": "text-and-image",
       "name": "t:sections.text-and-image.presets.image_with_text.name",
       "settings": {
-        "image": "shopify:\/\/shop_images\/B2B_lead_page_facialist_image_Ultraluxe.png",
+        "image": "shopify:\/\/shop_images\/Trio-IMage.png",
         "image_mask": "portrait",
         "image2_mask": "none",
         "subtitle": "Here are benefits!",
         "title": "Boost your facial business now!",
-        "text": "<ul><li>Made in USA<\/li><li>No Minimum opening or re-orders!<\/li><li>Private Label available!<\/li><li>Affordable starter packages<\/li><li>Free samples to try<\/li><li>Free trainings<\/li><li>Exclusive Peels and Enzymes: Wide range of professional peels and backbar exclusive products <\/li><li>Exclusive: Not sold everywhere. <\/li><li>Easy online ordering <\/li><li>Fast shipping<\/li><li>Drop Shipping <\/li><li>Clean Ingredients: High-quality. Science-based. Cold-pressed oils.<\/li><li>Certificates: Earn certificates after each free course. Free Trainings<\/li><li> 5-Star Support<\/li><li> Free Samples with every order. <\/li><li>Backbar: Professional products, facial packages, and service training.<\/li><li>Training with master esthetician<\/li><li>Monthly promotions<\/li><li>Free shelf talkers<\/li><\/ul><p>Schedule your call today and receive a free copy of our E-Book: '10 Secrets To A Thriving Beauty Business<\/p>",
-        "button_label": "Start Now",
+        "text": "<ul><li>Supporting spas, salons and independent operators since 1998<\/li><li>No Minimum opening or re-orders<\/li><li>Peels and Enzymes: Wide range of pro peels and backbar exclusive products<\/li><li>Exclusive: Not sold everywhere.<\/li><li>Easy online ordering<\/li><li>Drop Shipping<\/li><li>Clean Ingredients: High-quality. Science-based. Cold-pressed oils.<\/li><li>Certificates: Earn certificates after each free course.<\/li><li>Free Trainings<\/li><li>5-Star Support<\/li><li>Free Samples: with every order.<\/li><li>Backbar: Professional products, facial packages, and service training.<\/li><\/ul><p>Schedule your call today and receive a free copy of our E-Book: '10 Secrets To A Thriving Beauty Business<\/p>",
+        "button_label": "Click To Start Now",
         "button_link": "",
-        "open_popup": true,
         "button_style": "primary",
         "align_text": "left",
         "image_width": "50",
@@ -203,7 +175,7 @@
             "icon": "5-stars",
             "testimonial": "<p>\"Partnering with UltraLuxe transformed our business. Their support and training are unparalleled, and our retail sales have increased significantly.\"<\/p>",
             "author": "— James M., Manager, Luxe MedSpa",
-            "author_info": ""
+            "author_info": "Los Angeles, CA"
           }
         },
         "testimonial_9yii3h": {
@@ -221,7 +193,7 @@
             "icon": "5-stars",
             "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
             "author": "Author's name",
-            "author_info": ""
+            "author_info": "Los Angeles, CA"
           }
         },
         "testimonial_GxNqPy": {
@@ -260,9 +232,8 @@
         "subtitle": "About",
         "title": "UltraLuxe Skincare",
         "text": "<p>UltraLuxe Skincare has been proudly serving spas, salons, and independent operators since 1998, delivering professional results with clean, high-quality ingredients. Our line, made in the USA, is vegan, cruelty-free, and crafted in Los Angeles using cutting-edge technologies like our exclusive MicroVenom.<\/p><p>We offer a wide range of professional peels, backbar products, and drop shipping options—all without minimum order requirements. With every order, you’ll receive free samples and access to our free training programs. Earn certificates and experience 5-star support from our team.<\/p><p>UltraLuxe is not sold everywhere—our exclusive products are designed for professionals who want the best for their clients.<\/p>",
-        "button_label": "start now",
+        "button_label": "Click to start now",
         "button_link": "",
-        "open_popup": true,
         "button_style": "primary",
         "align_text": "left",
         "image_width": "50",
@@ -277,8 +248,7 @@
   "order": [
     "main",
     "rich_text_HgEpCB",
-    "popup_button_4RUWnA",
-    "popup_button_fNWrth",
+    "advanced_content_BERECY",
     "logo_list_Neq3Kq",
     "text_and_image_wqCjzR",
     "testimonials_pHk6JH",

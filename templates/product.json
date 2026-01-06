@@ -3,8 +3,29 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "judge_me_reviews_preview_badge_e7Bkeq": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
         "price": {
           "type": "price",
+          "settings": {}
+        },
+        "text_iAAaJj": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Size:{{ product.metafields.custom.product_size | metafield_text }}"
+          }
+        },
+        "custom_Lej6qF": {
+          "type": "custom",
+          "settings": {
+            "code": "<div style=\"margin-top:-20px\">\nSize: {{ product.metafields.custom.product_size | metafield_text }}  &nbsp;&nbsp;&nbsp; SKU: {{product.variants.first.sku}}\n<\/div>"
+          }
+        },
+        "scarcity_stock_counter_app_block_EQMw8L": {
+          "type": "shopify:\/\/apps\/scarcity-stock-counter\/blocks\/app-block\/c0e4a7d7-acc3-497b-80aa-b72cf8156ac3",
           "settings": {}
         },
         "separator": {
@@ -30,15 +51,18 @@
           "type": "sales_point",
           "settings": {
             "icon": "globe",
-            "text": "Free worldwide shipping"
+            "text": "Worldwide shipping"
           }
         },
-        "inventory_status": {
-          "type": "inventory_status",
+        "recharge_subscriptions_subscription_widget_pQFUCC": {
+          "type": "shopify:\/\/apps\/recharge-subscriptions\/blocks\/subscription-widget\/371eed76-0b44-4869-9813-730372ea378e",
           "settings": {
-            "inventory_threshold": 10,
-            "inventory_transfers_enable": true
+            "product": "{{product}}"
           }
+        },
+        "quantity_selector_EhrUdB": {
+          "type": "quantity_selector",
+          "settings": {}
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -48,41 +72,76 @@
             "show_gift_card_recipient": false
           }
         },
+        "videowise_video_commerce_videowise_page_widgets_6GADbG": {
+          "type": "shopify:\/\/apps\/videowise-video-commerce\/blocks\/videowise-page-widgets\/b48d6c0c-3e3f-4791-a9ab-a5ab7ec82f4d",
+          "settings": {
+            "videowise_embed": "<div class=\"reeview-app-widget\" id=\"reeview-app-widget_68b9d3a6c6d0aa0058d9784c\"><\/div>"
+          }
+        },
         "description": {
           "type": "description",
           "settings": {
-            "is_tab": false
+            "is_tab": true
+          }
+        },
+        "tab_TFkmYn": {
+          "type": "tab",
+          "settings": {
+            "title": "Benefits",
+            "content": "{{ product.metafields.custom.benefits | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "tab_GQr94W": {
+          "type": "tab",
+          "settings": {
+            "title": "How To Use",
+            "content": "{{ product.metafields.custom.how_to_use | metafield_tag }}",
+            "page": ""
           }
         },
         "tab": {
           "type": "tab",
           "settings": {
-            "title": "Shipping information",
-            "content": "<p>Use collapsible tabs for more detailed information that will help customers make a purchasing decision.<\/p><p>Ex: Shipping and return policies, size guides, and other common questions.<\/p>",
+            "title": "Ingredients",
+            "content": "{{ product.metafields.custom.ingredients | metafield_tag }}",
             "page": ""
           }
         },
         "share": {
           "type": "share",
           "settings": {}
+        },
+        "selleasy_lb_upsell_widget_pal_9JwJ7q": {
+          "type": "shopify:\/\/apps\/selleasy\/blocks\/lb-upsell-widget-pal\/790c1a03-a71f-4bc1-9869-00dad526d3c2",
+          "settings": {}
         }
       },
       "block_order": [
+        "judge_me_reviews_preview_badge_e7Bkeq",
         "price",
+        "text_iAAaJj",
+        "custom_Lej6qF",
+        "scarcity_stock_counter_app_block_EQMw8L",
         "separator",
         "size_chart",
         "variant_picker",
         "sales_point",
-        "inventory_status",
+        "recharge_subscriptions_subscription_widget_pQFUCC",
+        "quantity_selector_EhrUdB",
         "buy_buttons",
+        "videowise_video_commerce_videowise_page_widgets_6GADbG",
         "description",
+        "tab_TFkmYn",
+        "tab_GQr94W",
         "tab",
-        "share"
+        "share",
+        "selleasy_lb_upsell_widget_pal_9JwJ7q"
       ],
       "settings": {
         "sku_enable": false,
         "image_position": "left",
-        "image_size": "large",
+        "image_size": "small",
         "product_zoom_enable": true,
         "thumbnail_position": "beside",
         "thumbnail_height": "flexible",
@@ -95,26 +154,47 @@
     "sub": {
       "type": "product-full-width",
       "disabled": true,
-      "settings": {}
+      "settings": {
+        "max_width": true
+      }
     },
     "background-image-text": {
       "type": "background-image-text",
+      "disabled": true,
       "settings": {
         "subtitle": "locally crafted",
         "title": "Made in California",
         "text": "<p>We've always believed in the power of locally made goods. The quality of the craftsmanship and the local artisans we employ are what make Luxette our mission in life.<\/p>",
         "button_label": "",
-        "layout": "right"
+        "button_link": "",
+        "layout": "right",
+        "height": 550,
+        "framed": false,
+        "parallax": true,
+        "parallax_direction": "top",
+        "lazyload_images": true
       }
     },
     "text-and-image": {
       "type": "text-and-image",
+      "disabled": true,
       "settings": {
+        "image_mask": "none",
+        "image2_mask": "none",
         "subtitle": "Every time",
         "title": "Perfectly tailored",
         "text": "<p>Tailored to fit right every time. Use our handy size guide to choose the right size and if it ever doesn't fit, just return it and we'll pay the postage.<\/p>",
         "button_label": "",
-        "image_width": "66"
+        "button_link": "",
+        "open_popup": false,
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "66",
+        "layout": "right",
+        "divider": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
       }
     },
     "testimonials": {
@@ -123,6 +203,7 @@
         "testimonial-1": {
           "type": "testimonial",
           "settings": {
+            "icon": "5-stars",
             "testimonial": "<p>Couldn't be happier with the service I received from this company.<\/p>",
             "author": "Leslie M.",
             "author_info": "Toronto, ON"
@@ -131,13 +212,16 @@
         "testimonial-2": {
           "type": "testimonial",
           "settings": {
+            "icon": "5-stars",
             "testimonial": "<p>Really went out of their way to make me feel special as a customer, highly recommend!<\/p>",
-            "author": "Rachel F."
+            "author": "Rachel F.",
+            "author_info": "Los Angeles, CA"
           }
         },
         "testimonial-3": {
           "type": "testimonial",
           "settings": {
+            "icon": "5-stars",
             "testimonial": "<p>Fantastic fabrics, great fit and no issues going through the laundry either!<\/p>",
             "author": "Sam R.",
             "author_info": "Brooklyn, NY"
@@ -146,6 +230,7 @@
         "testimonial-4": {
           "type": "testimonial",
           "settings": {
+            "icon": "5-stars",
             "testimonial": "<p>Arrived fast and beautifully boxed. They even let me model on their site :)<\/p>",
             "author": "Sharon S.",
             "author_info": "New Orleans, LA"
@@ -154,6 +239,7 @@
         "testimonial-5": {
           "type": "testimonial",
           "settings": {
+            "icon": "5-stars",
             "testimonial": "<p>Couldn't be happier with the service I received from this company.<\/p>",
             "author": "Matt C.",
             "author_info": "Montreal, QC"
@@ -167,32 +253,117 @@
         "testimonial-4",
         "testimonial-5"
       ],
+      "disabled": true,
       "settings": {
         "title": "Hear it from them",
-        "color_background": "#e4eaee"
+        "align_text": "center",
+        "round_images": true,
+        "color_background": "#e4eaee",
+        "color_text": "#1c1d1d"
+      }
+    },
+    "faq_87QBLe": {
+      "type": "faq",
+      "blocks": {
+        "question_zxBCck": {
+          "type": "question",
+          "settings": {
+            "title": "What is your return policy?",
+            "text": "<p>Your satisfaction is 100% guaranteed!<\/p>"
+          }
+        },
+        "question_jEUa9R": {
+          "type": "question",
+          "settings": {
+            "title": "How do I return an item?",
+            "text": "<p>We guarantee our products 100%. We will gladly accept exchanges, refunds or returns (less shipping cost) for any UltraLuxe products upon receiving the item within 30 days of the purchase date. Please contact Customer Service at <a href=\"mailto:frontdesk@ultraluxeskincare.com\" target=\"_blank\">frontdesk@ultraluxeskincare.com<\/a> or call 1.855.366.8102 ext. 221 to obtain a RMA# (Return Merchandise Authorization). Customer is responsible for return shipping cost. Please follow the simple instructions below:<br\/><br\/>- To make it easy, place the item in its original condition and use the original packaging to ship your product.<br\/>- Clearly label the outside of the package (under the return address) with your RMA number obtained from an UltraLuxe Customer Service representative.<br\/>- Product MUST be ¾ full in original packaging to be accepted for a refund or exchange. Mail your UltraLuxe return to:<br\/><br\/>UltraLuxe Skincare \/ Mindys Cosmetics<br\/>Attention: Customer Service Returns Department<br\/>9140 Owensmouth Ave.<br\/>Chatsworth, CA 91311 USA<\/p>"
+          }
+        },
+        "question_PtzN6y": {
+          "type": "question",
+          "settings": {
+            "title": "How do I know my credit card information is protected on your site?",
+            "text": "<p>At UltraLuxe, we take your security seriously and go above and beyond to protect your information. Your credit card information is transmitted to us through a highly secure SSL connection, which cannot be intercepted. Once in our system your credit card information is encrypted, meaning no one has access to that information at any time.<\/p>"
+          }
+        },
+        "question_Y7KbtT": {
+          "type": "question",
+          "settings": {
+            "title": "If I save my credit card information in my account, is it safe?",
+            "text": "<p>Your auto-checkout credit card information is encrypted and protected by a password for your security. To ensure your information is never stolen, your password decryption only shows a portion of your credit card information, meaning that if your password is stolen, your information is still safe in our system.<\/p>"
+          }
+        },
+        "question_qgthFp": {
+          "type": "question",
+          "settings": {
+            "title": "I just placed an order but selected the wrong item. Can I change it? Can you cancel it?",
+            "text": "<p>Yes it can be changed or canceled as long as the order has not yet been processed. Please reach out to Customer Service (<a href=\"mailto:frontdesk@ultruluxeskincare.com\" target=\"_blank\">frontdesk@ultruluxeskincare.com<\/a>) by email with your request of change. CS will manually adjust order before it being processed and shipped out.<\/p>"
+          }
+        },
+        "question_rw7q4i": {
+          "type": "question",
+          "settings": {
+            "title": "I just placed an order - will I get a confirmation from you?",
+            "text": "<p>A digital copy of your receipt and confirmation will be emailed as soon as the order is placed. A tracking # will be sent once the order has been processed.<\/p>"
+          }
+        },
+        "question_E6anXT": {
+          "type": "question",
+          "settings": {
+            "title": "I just placed an order but put the wrong address. Can I change it? Can you cancel it?",
+            "text": "<p>Yes it can be changed or canceled as long as the order has not yet been processed. Please reach out to Customer Service by email with your request of change. CS will manually adjust order before it being processed and shipped out.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_zxBCck",
+        "question_jEUa9R",
+        "question_PtzN6y",
+        "question_Y7KbtT",
+        "question_qgthFp",
+        "question_rw7q4i",
+        "question_E6anXT"
+      ],
+      "name": "t:sections.faq.presets.faq.name",
+      "settings": {
+        "title": "FAQs"
       }
     },
     "text-and-image-2": {
       "type": "text-and-image",
+      "disabled": true,
       "settings": {
+        "image_mask": "none",
+        "image2_mask": "none",
         "subtitle": "Soft, breezy",
         "title": "Lightweight fabric",
         "text": "<p>Keep cool this summer with our lightweight Egyptian cotton-polyester blend, the softest shirts on the beach.<\/p>",
         "button_label": "",
+        "button_link": "",
+        "open_popup": false,
+        "button_style": "primary",
+        "align_text": "left",
         "image_width": "66",
-        "layout": "left"
+        "layout": "left",
+        "divider": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
       }
     },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
+        "product_recommendations_heading": "You may also like",
         "related_count": 5,
         "products_per_row": 5
       }
     },
     "recently-viewed": {
       "type": "recently-viewed",
-      "settings": {}
+      "settings": {
+        "recent_count": 5
+      }
     },
     "countdown": {
       "type": "countdown",
@@ -210,13 +381,20 @@
           "type": "timer",
           "settings": {
             "year": "2023",
+            "month": "01",
+            "day": "1",
+            "hour": "03",
+            "minute": "00",
+            "hide_timer": false,
             "text": ""
           }
         },
         "button": {
           "type": "button",
           "settings": {
-            "button": "Shop Now"
+            "button_link": "",
+            "button": "Shop Now",
+            "button_style": "solid"
           }
         }
       },
@@ -225,22 +403,42 @@
         "timer",
         "button"
       ],
+      "disabled": true,
       "settings": {
         "layout": "hero",
+        "full_width": false,
         "text_color": "#ffffff",
         "background_color": "#f9e8e0",
         "overlay_color": "#000000",
-        "overlay_opacity": 30
+        "overlay_opacity": 30,
+        "lazyload_images": true
       }
     },
     "collection-return": {
       "type": "collection-return",
+      "disabled": true,
       "settings": {}
     },
     "apps": {
       "type": "apps",
-      "disabled": true,
-      "settings": {}
+      "blocks": {
+        "judge_me_reviews_review_widget_7A9mLh": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_7A9mLh"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
     }
   },
   "order": [
@@ -249,6 +447,7 @@
     "background-image-text",
     "text-and-image",
     "testimonials",
+    "faq_87QBLe",
     "text-and-image-2",
     "product-recommendations",
     "recently-viewed",

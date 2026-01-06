@@ -15,39 +15,42 @@
     assign show_selectors = true
   endif
 -%}
+  {% if customer and customer.tags contains "WHOLESALEDRAFTORDER" %}
+  
+  {% else %}
+    <div class="toolbar{% if overlay_header%} toolbar--transparent{% endif %} small--hide">
+      <div class="page-width">
+        <div class="toolbar__content">
+          {%- if section.settings.toolbar_menu != blank -%}
+            <div class="toolbar__item toolbar__item--menu">
+              <ul class="inline-list toolbar__menu">
+              {%- for link in toolbar_menu.links -%}
+                <li>
+                  <a href="{{ link.url }}">{{ link.title }}</a>
+                </li>
+              {%- endfor -%}
+              </ul>
+            </div>
+          {%- endif -%}
 
-<div class="toolbar{% if overlay_header%} toolbar--transparent{% endif %} small--hide">
-  <div class="page-width">
-    <div class="toolbar__content">
-      {%- if section.settings.toolbar_menu != blank -%}
-        <div class="toolbar__item toolbar__item--menu">
-          <ul class="inline-list toolbar__menu">
-          {%- for link in toolbar_menu.links -%}
-            <li>
-              <a href="{{ link.url }}">{{ link.title }}</a>
-            </li>
-          {%- endfor -%}
-          </ul>
-        </div>
-      {%- endif -%}
+          {%- if section.settings.toolbar_social -%}
+            <div class="toolbar__item">
+              {% render 'social-icons', additional_classes: 'inline-list toolbar__social' %}
+            </div>
+          {%- endif -%}
 
-      {%- if section.settings.toolbar_social -%}
-        <div class="toolbar__item">
-          {% render 'social-icons', additional_classes: 'inline-list toolbar__social' %}
+          {%- if show_selectors -%}
+            <div class="toolbar__item">
+              {%- render 'multi-selectors',
+                locale_selector: locale_selector,
+                currency_selector: currency_selector,
+                show_currency_flags: section.settings.show_currency_flags
+                location: 'toolbar'
+              -%}
+            </div>
+          {%- endif -%}
         </div>
-      {%- endif -%}
 
-      {%- if show_selectors -%}
-        <div class="toolbar__item">
-          {%- render 'multi-selectors',
-            locale_selector: locale_selector,
-            currency_selector: currency_selector,
-            show_currency_flags: section.settings.show_currency_flags
-            location: 'toolbar'
-          -%}
-        </div>
-      {%- endif -%}
+      </div>
     </div>
-
-  </div>
-</div>
+  {% endif %}

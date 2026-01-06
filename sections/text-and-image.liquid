@@ -115,9 +115,15 @@
         {%- endif -%}
         {%- if section.settings.button_label != blank -%}
           <div class="appear-delay{% cycle '','-1','-2','-3','-4' %}">
-            <a href="{{ section.settings.button_link }}" class="btn{% if section.settings.button_style == 'secondary' %} btn--tertiary{% endif %}">
+            {% if section.settings.open_popup %}
+              <a onclick="openModal()" class="btn">
               {{ section.settings.button_label }}
-            </a>
+              </a>
+            {% else %}
+              <a href="{{ section.settings.button_link }}" class="btn{% if section.settings.button_style == 'secondary' %} btn--tertiary{% endif %}">
+                {{ section.settings.button_label }}
+              </a>
+            {% endif %}
           </div>
         {%- endif -%}
       </div>
@@ -298,6 +304,11 @@
       "label": "t:sections.text-and-image.settings.button_link.label"
     },
     {
+      "type": "checkbox",
+      "id": "open_popup",
+      "label": "Open Popup"
+    },
+    {
       "type": "select",
       "id": "button_style",
       "label": "t:sections.text-and-image.settings.button_style.label",
@@ -313,7 +324,7 @@
         }
       ]
     },
-    {
+    { 
       "type": "select",
       "id": "align_text",
       "label": "t:sections.text-and-image.settings.align_text.label",

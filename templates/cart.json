@@ -1,23 +1,101 @@
 {
   "sections": {
+    "1754398476038d6bda": {
+      "type": "apps",
+      "blocks": {
+        "monk_embedded_cart_page_cvb_ikBpR7": {
+          "type": "shopify:\/\/apps\/monk\/blocks\/embedded-cart-page-cvb\/e949adb6-87ca-4b97-8f31-0e51bf507f2d",
+          "settings": {
+            "widget_id": ""
+          }
+        }
+      },
+      "block_order": [
+        "monk_embedded_cart_page_cvb_ikBpR7"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
     "main": {
       "type": "main-cart",
       "settings": {}
     },
     "recently-viewed": {
       "type": "recently-viewed",
-      "settings": {}
+      "settings": {
+        "recent_count": 5
+      }
     },
     "featured-collection": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
-        "title": "Popular picks"
+        "title": "Popular picks",
+        "home_featured_products": "",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "rich_text_My8d8U": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_jjxtLM": {
+          "type": "heading",
+          "settings": {
+            "title": "Free Sample Tiers:"
+          }
+        },
+        "text_dpKrAN": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<ul><li>Get <strong>1<\/strong> for orders up to $99.99<\/li><li>Get <strong>2<\/strong> for $100–$199.99<\/li><li>Get <strong>3<\/strong> for $200–$299.99<\/li><li>Get <strong>4<\/strong> for $300–$399.99<\/li><li>Get <strong>5<\/strong> for $400+<\/li><\/ul><p>Note: Sample quantity and choice will be adjusted by us as needed<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_jjxtLM",
+        "text_dpKrAN"
+      ],
+      "name": "t:sections.rich-text.presets.rich_text.name",
+      "settings": {
+        "align_text": "left",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "1754398428e63062e0": {
+      "type": "apps",
+      "blocks": {
+        "monk_embedded_cart_page_freegift_manual_hiwA3V": {
+          "type": "shopify:\/\/apps\/monk\/blocks\/embedded-cart-page-freegift-manual\/e949adb6-87ca-4b97-8f31-0e51bf507f2d",
+          "settings": {
+            "widget_id": ""
+          }
+        }
+      },
+      "block_order": [
+        "monk_embedded_cart_page_freegift_manual_hiwA3V"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "space_around": true
       }
     }
   },
   "order": [
+    "1754398476038d6bda",
     "main",
     "recently-viewed",
-    "featured-collection"
+    "featured-collection",
+    "rich_text_My8d8U",
+    "1754398428e63062e0"
   ]
 }

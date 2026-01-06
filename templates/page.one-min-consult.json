@@ -51,7 +51,7 @@
           "type": "text",
           "settings": {
             "enlarge_text": false,
-            "text": "<p><strong>All products are Made in USA, Vegan, Paraben and Sulfate Free, Contain No Artificial Colors or Fragrances, No Animal Cruelty or By-Products<\/strong><\/p><p>Complete our one-minute skin consultation form and let our friendly and professional Skin Specialists create the perfect skincare solution so you can achieve a fresh, radiant and glowing complexion. You receive Free Samples with every order and 15% off your first order. You may also call us at <a href=\"tel:18553668097\" title=\"tel:18553668097\">1-855-366-8097<\/a><\/p>"
+            "text": "<p><strong>All products are Made in USA, Vegan, Paraben and Sulfate Free, Contain No Artificial Colors or Fragrances, No Animal Cruelty or By-Products<\/strong><\/p><p>Complete our one-minute skin consultation form and let our friendly  and professional Skin Specialists create the perfect skincare solution so you can achieve a fresh, radiant and glowing complexion. You receive Free Samples with every order and 15% off your first order. You may also call us at 1-855-366-8102<\/p>"
           }
         }
       },
@@ -65,11 +65,34 @@
         "narrow_column": true,
         "divider": false
       }
+    },
+    "advanced_content_aW7ahx": {
+      "type": "advanced-content",
+      "blocks": {
+        "liquid_ffDrjf": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"klaviyo-form-VBWa4u\"><\/div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_ffDrjf"
+      ],
+      "name": "t:sections.advanced-content.presets.custom_content.name",
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "lazyload_images": true
+      }
     }
   },
   "order": [
     "main",
     "advanced_content_6KCN8d",
-    "rich_text_4rQQda"
+    "rich_text_4rQQda",
+    "advanced_content_aW7ahx"
   ]
 }

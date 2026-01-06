@@ -7,13 +7,21 @@
 -%}
 
 <div class="header-item header-item--logo-split" role="navigation" aria-label="Primary">
-  <div class="header-item header-item--split-left">
-    {%- render 'header-desktop-nav', main_menu: main_menu, limit: link_count_half, dropdown_alignment: dropdown_alignment, hover_menu: hover_menu -%}
-  </div>
+  {% if customer and customer.tags contains "WHOLESALEDRAFTORDER" %}
+  
+  {% else %}
+    <div class="header-item header-item--split-left">
+      {%- render 'header-desktop-nav', main_menu: main_menu, limit: link_count_half, dropdown_alignment: dropdown_alignment, hover_menu: hover_menu -%}
+    </div>
+  {% endif %}
   <div class="header-item header-item--logo">
     {%- render 'header-logo-block', section: section -%}
   </div>
-  <div class="header-item header-item--split-right">
-    {%- render 'header-desktop-nav', main_menu: main_menu, offset: link_count_half, dropdown_alignment: dropdown_alignment, hover_menu: hover_menu -%}
-  </div>
+  {% if customer and customer.tags contains "WHOLESALEDRAFTORDER" %}
+  
+  {% else %}
+    <div class="header-item header-item--split-right">
+      {%- render 'header-desktop-nav', main_menu: main_menu, offset: link_count_half, dropdown_alignment: dropdown_alignment, hover_menu: hover_menu -%}
+    </div>
+  {% endif %}
 </div>

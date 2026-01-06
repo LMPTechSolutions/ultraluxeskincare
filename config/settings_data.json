@@ -4,7 +4,8 @@
     "color_body_text": "#321004",
     "color_savings_text": "#f8ecec",
     "color_borders": "#e8e1e1",
-    "color_button": "#d5bdaf",
+    "color_button": "#321004",
+    "color_button_text": "#f5ebe0",
     "color_sale_tag": "#f8ecec",
     "color_cart_dot": "#f8ecec",
     "color_large_image_bg": "#0f0f0f",
@@ -26,6 +27,7 @@
     "type_header_line_height": 1.1,
     "type_header_capitalize": true,
     "type_headers_align_text": true,
+    "type_base_font_family": "questrial_n4",
     "type_base_spacing": "25",
     "type_base_size": 16,
     "type_navigation_style": "body",
@@ -35,7 +37,7 @@
     "type_product_capitalize": false,
     "type_collection_font": "heading",
     "type_collection_size": 20,
-    "button_style": "round",
+    "button_style": "square",
     "icon_weight": "3px",
     "icon_linecaps": "round",
     "quick_shop_enable": true,
@@ -46,6 +48,8 @@
     "collection_grid_shape": "portrait",
     "collection_grid_image": "product",
     "collection_grid_opacity": 0,
+    "cart_type": "page",
+    "cart_additional_buttons": true,
     "cart_notes_enable": true,
     "social_facebook_link": "https:\/\/www.facebook.com\/UltraLuxeskincare",
     "social_pinterest_link": "",
@@ -55,6 +59,7 @@
     "share_twitter": false,
     "share_pinterest": false,
     "favicon": "shopify:\/\/shop_images\/Favicon.png",
+    "search_enable": false,
     "predictive_search_show_price": true,
     "show_breadcrumbs": false,
     "show_breadcrumbs_collection_link": true,
@@ -68,12 +73,103 @@
     "checkout_sidebar_background_color": "#fafafa",
     "content_for_index": [],
     "blocks": {
-      "733389323033596483": {
-        "type": "shopify:\/\/apps\/okendo\/blocks\/theme-settings\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+      "7280966411886983154": {
+        "type": "shopify:\/\/apps\/monk\/blocks\/app-embed\/e949adb6-87ca-4b97-8f31-0e51bf507f2d",
+        "disabled": false,
+        "settings": {}
+      },
+      "855628211100114053": {
+        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {}
+      },
+      "9776720720251544092": {
+        "type": "shopify:\/\/apps\/helium-customer-fields\/blocks\/app-embed\/bab58598-3e6a-4377-aaaa-97189b15f131",
         "disabled": false,
         "settings": {
-          "show_preview_data": true
+          "registration_form_id": "",
+          "edit_account_form_id": "",
+          "edit_account_link_text": "Edit account",
+          "edit_account_heading": "Edit account",
+          "edit_account_back_link_text": "Back to account",
+          "enable_js_api": false
         }
+      },
+      "9365423049038898845": {
+        "type": "shopify:\/\/apps\/tawk-to-live-chat\/blocks\/widget-embed-code\/91169e75-f163-40ce-90e0-9059f3c9b772",
+        "disabled": false,
+        "settings": {}
+      },
+      "17151115064775110295": {
+        "type": "shopify:\/\/apps\/recharge-subscriptions\/blocks\/recharge-theme\/371eed76-0b44-4869-9813-730372ea378e",
+        "disabled": false,
+        "settings": {
+          "color_brand": "#467C99",
+          "contrast_color": "#FFFFFF",
+          "color_brand_secondary": "#467C99",
+          "corners": "8px",
+          "app_background": "#f9f8f4",
+          "app_container": 1200,
+          "app_vertical_padding": 32,
+          "images_aspect_ratio": "1",
+          "cards_background": "#FFFFFF",
+          "cards_border_color": "rgba(0,0,0,0)"
+        }
+      },
+      "16798170927650018749": {
+        "type": "shopify:\/\/apps\/recharge-subscriptions\/blocks\/storefront-experiences\/371eed76-0b44-4869-9813-730372ea378e",
+        "disabled": false,
+        "settings": {}
+      },
+      "14060646107696862457": {
+        "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {}
+      },
+      "5784066569132941777": {
+        "type": "shopify:\/\/apps\/s-store-locator\/blocks\/embed-app\/e7003487-cc51-4321-9488-2c47c07a5b17",
+        "disabled": false,
+        "settings": {}
+      },
+      "7885500093077574326": {
+        "type": "shopify:\/\/apps\/videowise-video-commerce\/blocks\/script_embed\/b48d6c0c-3e3f-4791-a9ab-a5ab7ec82f4d",
+        "disabled": false,
+        "settings": {}
+      },
+      "wholesale_gorilla": {
+        "type": "shopify:\/\/apps\/wholesale-gorilla\/blocks\/wsg-header\/c48d0487-dff9-41a4-94c8-ec6173fe8b8d",
+        "disabled": false,
+        "settings": {
+          "embed_bg_color": "#000000",
+          "embed_text_color": "#000000"
+        }
+      },
+      "18228966181090706294": {
+        "type": "shopify:\/\/apps\/selleasy\/blocks\/app-embed\/790c1a03-a71f-4bc1-9869-00dad526d3c2",
+        "disabled": false,
+        "settings": {
+          "storefrontAccessToken": ""
+        }
+      },
+      "16881471024131275657": {
+        "type": "shopify:\/\/apps\/searchanise-search-filter\/blocks\/app-embed\/d8f24ada-02b1-458a-bbeb-5bf16d5c921e",
+        "disabled": true,
+        "settings": {}
+      },
+      "6174324309569838175": {
+        "type": "shopify:\/\/apps\/smile-io\/blocks\/smile-shopify-app\/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
+        "disabled": false,
+        "settings": {}
+      },
+      "9527080161720020250": {
+        "type": "shopify:\/\/apps\/qikify-timer-announcement-bar\/blocks\/app-embed\/265b948a-6ec4-4b9d-b633-5fc8919433eb",
+        "disabled": false,
+        "settings": {}
+      },
+      "13372541880985386961": {
+        "type": "shopify:\/\/apps\/scarcity-stock-counter\/blocks\/app-embed-block\/c0e4a7d7-acc3-497b-80aa-b72cf8156ac3",
+        "disabled": false,
+        "settings": {}
       }
     }
   },

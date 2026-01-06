@@ -8,9 +8,9 @@
         "announcement-0": {
           "type": "announcement",
           "settings": {
-            "text": "Free Shipping with $60+ Orders  |",
-            "link_text": "Free Samples",
-            "link": "shopify:\/\/pages\/free-samples"
+            "text": "Free Shipping with $60+",
+            "link_text": "",
+            "link": ""
           }
         },
         "announcement-1": {
@@ -28,12 +28,30 @@
             "link_text": "Wholesale Inquiry",
             "link": "shopify:\/\/pages\/professional-inquiry-page"
           }
+        },
+        "announcement_t3qNqJ": {
+          "type": "announcement",
+          "settings": {
+            "text": "Free Samples",
+            "link_text": "",
+            "link": "shopify:\/\/pages\/free-samples"
+          }
+        },
+        "announcement_RagwA9": {
+          "type": "announcement",
+          "settings": {
+            "text": "Vegan · Paraben-Free · Sulfate-Free · Non-Toxic · Cruelty-Free · No Artificial Fragrance or Colors",
+            "link_text": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "announcement-0",
         "announcement-1",
-        "announcement_NwCPgG"
+        "announcement_NwCPgG",
+        "announcement_t3qNqJ",
+        "announcement_RagwA9"
       ],
       "settings": {
         "announcement_compact": true
@@ -55,14 +73,14 @@
         "logo"
       ],
       "settings": {
-        "main_menu_link_list": "sample-menu",
+        "main_menu_link_list": "main-menu-new",
         "hover_menu": true,
         "mega_menu_images": true,
         "main_menu_alignment": "center-split",
         "header_style": "sticky",
         "sticky_index": false,
         "sticky_collection": false,
-        "toolbar_menu": "sample-menu",
+        "toolbar_menu": "top-menu",
         "toolbar_social": true,
         "show_locale_selector": false,
         "show_currency_selector": false,

@@ -3,113 +3,78 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
+        "image_FRdi9Q": {
+          "type": "image",
+          "name": "1\/5 slide",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "https:\/\/ultraluxeskincare.com\/collections\/dry-skin",
+            "link_text": ".",
+            "link_2": "https:\/\/ultraluxeskincare.com\/collections\/dry-skin",
+            "link_text_2": ".",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Desktop_Banner_Template-01-06-25-01-11-25.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Mobile_Banner_Template-01-06-25-01-11-25.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        },
+        "image_wnHCq9": {
+          "type": "image",
+          "name": "12\/29.",
+          "disabled": true,
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "shopify:\/\/collections\/microvenom-collection",
+            "link_text": "check",
+            "link_2": "shopify:\/\/collections\/microvenom-collection",
+            "link_text_2": "check",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Desktop_Banner_Template-12-29-25-01-04-26.png",
+            "image_mobile": "shopify:\/\/shop_images\/Mobile_Banner_Template-12-29-25-01-04-26.png",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        },
         "image_37QQFK": {
           "type": "image",
+          "name": "Free Samples Slide",
           "settings": {
             "top_subheading": "",
             "title": "",
             "title_size": 80,
             "subheading": "",
-            "link": "shopify:\/\/collections\/new-products",
+            "link": "https:\/\/ultraluxeskincare.com\/collections\/free-samples",
             "link_text": "",
-            "link_2": "",
+            "link_2": "https:\/\/ultraluxeskincare.com\/collections\/free-samples",
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/new_product_website_banner-01.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/mobile_size_banner-02.jpg",
-            "parallax_direction": "top",
-            "overlay_opacity": 0
-          }
-        },
-        "image_d9WTKA": {
-          "type": "image",
-          "settings": {
-            "top_subheading": "",
-            "title": "",
-            "title_size": 80,
-            "subheading": "",
-            "link": "shopify:\/\/collections\/regimen-kits-1",
-            "link_text": "",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "rgba(0,0,0,0)",
-            "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/00_all-kits_desktop_homebanner_a7efd880-3ffb-4ad4-be4d-2a68650c4e13.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/00_all-kits_mobile_newsletter_3dc8bd87-08f0-4bbf-bb19-a5d421aed412.jpg",
-            "parallax_direction": "top",
-            "overlay_opacity": 0
-          }
-        },
-        "image-3": {
-          "type": "image",
-          "settings": {
-            "top_subheading": "",
-            "title": "",
-            "title_size": 63,
-            "subheading": "",
-            "link": "https:\/\/ultraluxeskincare.com\/collections\/cellular-patch-cream-promotion-1",
-            "link_text": "",
-            "link_2": "",
-            "link_text_2": "Shop all",
-            "color_accent": "#8b4e40",
-            "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/Homepage-banner_July14-20_1.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/MOBILE-banner_JULY14-20_2.jpg",
-            "parallax_direction": "top",
-            "overlay_opacity": 0
-          }
-        },
-        "image-1": {
-          "type": "image",
-          "settings": {
-            "top_subheading": "",
-            "title": "",
-            "title_size": 64,
-            "subheading": "",
-            "link": "shopify:\/\/collections\/rx-scalp",
-            "link_text": "",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "#321004",
-            "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/Hair-Homepage-bannerN.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/aaam.png",
-            "parallax_direction": "top",
-            "overlay_opacity": 0
-          }
-        },
-        "image-2": {
-          "type": "image",
-          "settings": {
-            "top_subheading": "",
-            "title": "",
-            "title_size": 69,
-            "subheading": "",
-            "link": "shopify:\/\/collections\/ul-suncare-collection-promotion",
-            "link_text": "",
-            "link_2": "",
-            "link_text_2": "",
-            "color_accent": "#6b3f21",
-            "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/Homepage-banner_may-5-111.jpg",
+            "image": "shopify:\/\/shop_images\/free_samples_desktop3.png",
+            "image_mobile": "shopify:\/\/shop_images\/Free_Sample_Mobile.png",
             "parallax_direction": "top",
             "overlay_opacity": 0
           }
         }
       },
       "block_order": [
-        "image_37QQFK",
-        "image_d9WTKA",
-        "image-3",
-        "image-1",
-        "image-2"
+        "image_FRdi9Q",
+        "image_wnHCq9",
+        "image_37QQFK"
       ],
       "settings": {
         "section_height": "natural",
-        "mobile_height": "100vh",
+        "mobile_height": "auto",
         "parallax": false,
-        "style": "bars",
+        "style": "arrows",
         "autoplay": true,
         "autoplay_speed": 5,
         "lazyload_images": true
@@ -121,7 +86,7 @@
         "title": "Featured \/ Best Sellers",
         "home_featured_products": "featured-collection",
         "per_row": 3,
-        "rows": 4,
+        "rows": 1,
         "mobile_scrollable": true,
         "view_all": true,
         "divider": false
@@ -202,6 +167,24 @@
         "color_text": "#1c1d1d"
       }
     },
+    "17570105111239e0cf": {
+      "type": "apps",
+      "blocks": {
+        "videowise_video_commerce_videowise_page_widgets_Hc6QPF": {
+          "type": "shopify:\/\/apps\/videowise-video-commerce\/blocks\/videowise-page-widgets\/b48d6c0c-3e3f-4791-a9ab-a5ab7ec82f4d",
+          "settings": {
+            "videowise_embed": "<div class=\"reeview-app-widget\" id=\"reeview-app-widget_68b9d9c2c6d0aa0058e13365\"><\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "videowise_video_commerce_videowise_page_widgets_Hc6QPF"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
     "background_image_text_q8LeKm": {
       "type": "background-image-text",
       "name": "t:sections.background-image-text.presets.large_image_with_text_box.name",
@@ -222,20 +205,6 @@
     },
     "1753997361242a65f9": {
       "type": "apps",
-      "blocks": {
-        "okendo_reviews_carousel_YF7gLD": {
-          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-carousel\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
-          "settings": {
-            "show_heading": false,
-            "heading": "Customers Feedback",
-            "badge_link": "",
-            "product": ""
-          }
-        }
-      },
-      "block_order": [
-        "okendo_reviews_carousel_YF7gLD"
-      ],
       "settings": {
         "full_width": false,
         "space_around": true
@@ -279,11 +248,180 @@
         "logo_image_JxKC6H",
         "logo_image_UDzgWn"
       ],
+      "disabled": true,
       "name": "t:sections.logo-list.presets.logo_list.name",
       "settings": {
         "title": "Follow Us @ultraluxeskincare",
         "logo_opacity": 76,
         "divider": false
+      }
+    },
+    "text_with_icons_3yWrBQ": {
+      "type": "text-with-icons",
+      "blocks": {
+        "text_block_LCRxj7": {
+          "type": "text_block",
+          "settings": {
+            "icon": "globe",
+            "title": "Worldwide Shipping",
+            "text": ""
+          }
+        },
+        "text_block_TeYmhC": {
+          "type": "text_block",
+          "settings": {
+            "icon": "thumbs-up",
+            "title": "30 Day Easy Returns",
+            "text": ""
+          }
+        },
+        "text_block_84KLqQ": {
+          "type": "text_block",
+          "settings": {
+            "icon": "chat",
+            "title": "Live Friendly Customer Support",
+            "text": ""
+          }
+        },
+        "text_block_xVKaMn": {
+          "type": "text_block",
+          "settings": {
+            "icon": "shield",
+            "title": "100% Safe & Secure Checkout",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_LCRxj7",
+        "text_block_TeYmhC",
+        "text_block_84KLqQ",
+        "text_block_xVKaMn"
+      ],
+      "name": "t:common.text_with_icons.presets.text_with_icons.name",
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "desktop_columns_per_row": 4,
+        "icon_color": "#000000",
+        "button_label": "",
+        "button_link": "",
+        "divider": false
+      }
+    },
+    "promo_grid_zCBcz4": {
+      "type": "promo-grid",
+      "blocks": {
+        "advanced_wYtVQF": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "Limited time",
+            "heading": "Announce your promotion",
+            "textarea": "Include the smaller details of your promotion in text below the title.",
+            "cta_text1": "Shop This",
+            "cta_link1": "",
+            "cta_text2": "Shop All",
+            "cta_link2": "",
+            "image": "shopify:\/\/shop_images\/MOBILE_may-5-111.jpg",
+            "video_url": "",
+            "width": "50",
+            "height": 500,
+            "text_size": 100,
+            "text_align": "vertical-center horizontal-center",
+            "color_accent": "rgba(0,0,0,0)",
+            "boxed": false,
+            "framed": false
+          }
+        },
+        "advanced_jEYqxE": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "Limited time",
+            "heading": "Announce your promotion",
+            "textarea": "Include the smaller details of your promotion in text below the title.",
+            "cta_text1": "Shop This",
+            "cta_link1": "",
+            "cta_text2": "Shop All",
+            "cta_link2": "",
+            "video_url": "",
+            "width": "50",
+            "height": 500,
+            "text_size": 100,
+            "text_align": "vertical-center horizontal-center",
+            "color_accent": "rgba(0,0,0,0)",
+            "boxed": false,
+            "framed": false
+          }
+        }
+      },
+      "block_order": [
+        "advanced_wYtVQF",
+        "advanced_jEYqxE"
+      ],
+      "disabled": true,
+      "name": "t:sections.promo-grid.presets.promotional_grid.name",
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": true,
+        "space_below": true,
+        "lazyload_images": true
+      }
+    },
+    "hotspots_qBHtXt": {
+      "type": "hotspots",
+      "blocks": {
+        "product_4zTDHj": {
+          "type": "product",
+          "settings": {
+            "featured_product": "",
+            "vertical": 72,
+            "horizontal": 25
+          }
+        },
+        "product_Lkdqqa": {
+          "type": "product",
+          "settings": {
+            "featured_product": "",
+            "vertical": 75,
+            "horizontal": 53
+          }
+        }
+      },
+      "block_order": [
+        "product_4zTDHj",
+        "product_Lkdqqa"
+      ],
+      "disabled": true,
+      "name": "t:sections.hotspots.name",
+      "settings": {
+        "title": "Shop the look",
+        "heading_size": "h2",
+        "heading_position": "left",
+        "image": "shopify:\/\/shop_images\/MOBILE-banner_July15-21_56794662-3f0e-4d1a-a569-6c251220ffcd.jpg",
+        "indent_image": false,
+        "image_position": "left",
+        "hotspot_style": "bag",
+        "hotspot_color": "#000000",
+        "lazyload_images": true
+      }
+    },
+    "hero_video_K6K7eK": {
+      "type": "hero-video",
+      "disabled": true,
+      "name": "t:sections.hero-video.presets.video_hero.name",
+      "settings": {
+        "title": "",
+        "title_size": 80,
+        "subheading": "",
+        "link_text": "Enzyme Peeling Cream",
+        "link": "https:\/\/ultraluxeskincare.com\/products\/enzyme-peeling-cream",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-center",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=ODK3odKDnfc",
+        "overlay_opacity": 20,
+        "section_height": "650px",
+        "mobile_height": "auto"
       }
     }
   },
@@ -291,8 +429,13 @@
     "slideshow",
     "featured-collection",
     "testimonials_AiwyPk",
+    "17570105111239e0cf",
     "background_image_text_q8LeKm",
     "1753997361242a65f9",
-    "logo_list_VJ9eUy"
+    "logo_list_VJ9eUy",
+    "text_with_icons_3yWrBQ",
+    "promo_grid_zCBcz4",
+    "hotspots_qBHtXt",
+    "hero_video_K6K7eK"
   ]
 }

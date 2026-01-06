@@ -39,24 +39,53 @@
               This content is visually hidden and replaced when recommended products show up
             {% endcomment %}
             <div class="grid grid--uniform visually-invisible" aria-hidden="true">
-              {%- render 'product-grid-item',
-                product: product,
-                quick_shop_enable: settings.quick_shop_enable
-              -%}
+              {%- unless product.tags contains 'sample' or product.tags contains 'Wholesale products' -%}
+
+                {%- render 'product-grid-item',
+                  product: product,
+                  quick_shop_enable: settings.quick_shop_enable
+                -%}
+              {%- endunless -%}
+
             </div>
           </div>
         {%- endif -%}
         {%- if related_collection.products_count > 0 -%}
           <div class="product-recommendations page-width">
             <div class="grid grid--uniform" data-aos="overflow__animation">
+              {%- assign tagged_count = 0 -%}
+
+              
+              {%- for product in related_collection.products -%}
+              {%- if product.tags contains 'sample' or product.tags contains 'pro-size' -%}
+                {%- assign tagged_count = tagged_count | plus: 1 -%}
+              {%- endif -%}
+            {%- endfor -%}
+
               {%- for product in related_collection.products limit: number_of_products -%}
+                
+                {% comment %} {{ product.tags }} {% endcomment %}
                 {% comment %} On smaller screen sizes, 39vw is used for grid items in the CSS {% endcomment %}
-                {%- render 'product-grid-item',
-                  product: product,
-                  per_row: section.settings.products_per_row,
-                  quick_shop_enable: settings.quick_shop_enable,
-                  fallback: '39vw',
-                -%}
+                {%- unless product.tags contains 'sample' or product.tags contains 'pro-size' -%}
+                  {%- render 'product-grid-item',
+                    product: product,
+                    per_row: section.settings.products_per_row,
+                    quick_shop_enable: settings.quick_shop_enable,
+                    fallback: '39vw',
+                    -%}
+                {%- endunless -%}
+              {%- endfor -%}
+              {%- for product in related_collection.products limit: tagged_count -%}
+                {% comment %} {{ product.tags }} {% endcomment %}
+                {% comment %} On smaller screen sizes, 39vw is used for grid items in the CSS {% endcomment %}
+                {%- unless product.tags contains 'sample' or product.tags contains 'pro-size' -%}
+                  {%- render 'product-grid-item',
+                    product: product,
+                    per_row: section.settings.products_per_row,
+                    quick_shop_enable: settings.quick_shop_enable,
+                    fallback: '39vw',
+                    -%}
+                {%- endunless -%}
               {%- endfor -%}
             </div>
           </div>

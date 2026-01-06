@@ -6,8 +6,12 @@
   {%- endif -%}
 </style>
 
-{%- render 'announcement-bar', section: section -%}
+  {% if customer and customer.tags contains "WHOLESALEDRAFTORDER" %}
+  
+  {% else %}
 
+    {%- render 'announcement-bar', section: section -%}
+  {% endif %}
 {% schema %}
 {
   "name": "t:sections.header.settings.header_announcement_bar",
@@ -25,7 +29,7 @@
     {
       "type": "announcement",
       "name": "t:sections.header.blocks.announcement.name",
-      "limit": 4,
+      "limit": 5,
       "settings": [
         {
           "type": "text",

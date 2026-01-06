@@ -4714,9 +4714,31 @@ theme.recentlyViewed = {
   
   theme.buildProductGridItem = function(items, gridWidth, rowOf, imageSizes) {
     var output = '';
+
+    console.log("items", items);
+    console.log("gridWidth", gridWidth);
+    console.log("rowOf", rowOf);
+
+    console.log("imageSizes", imageSizes);
+    var newGridWidth = gridWidth;
   
     items.forEach(product => {
+
+      
+      if (product.title.includes("Facial Kit Samples") || product.title.includes("PRO-SIZE") ) {
+        // Find the next product that does not include "Facial Kit Samples"
+
+         newGridWidth =  "small--one-half medium-up--one-quarter";
+        
+
+
+
+            return; // no replacement found → skip
+      }
+      
       var image = theme.buildProductImage(product, imageSizes);
+
+
   
       let priceMarkup = '';
       let vendorMarkup = '';
@@ -4724,8 +4746,10 @@ theme.recentlyViewed = {
       if (theme.settings.predictiveSearchPrice) priceMarkup = `<div class="grid-product__price">${theme.strings.productFrom}${theme.Currency.formatMoney(product.price_min, theme.moneyFormat)}</div>`;
       if (theme.settings.predictiveSearchVendor) vendorMarkup = `<div class="grid-product__vendor">${product.vendor}</div>`;
   
+
+
       var markup = `
-        <div class="grid__item grid-product ${gridWidth} aos-animate" data-aos="row-of-${rowOf}">
+        <div class="grid__item grid-product  ${newGridWidth} aos-animate" data-aos="row-of-${rowOf}">
           <div class="grid-product__content">
             <a href="${product.url}" class="grid-product__link">
               <div class="grid-product__image-mask">
@@ -8350,3 +8374,14 @@ theme.recentlyViewed = {
   });
 
 })();
+
+// Custom scripts
+
+  function openModal(){
+    document.getElementById('Modal').style.display='block';
+    document.body.style.position = 'fixed';
+  }
+  function closeModal(){
+    document.getElementById('Modal').style.display='none';
+    document.body.style.position = 'static';
+  }
